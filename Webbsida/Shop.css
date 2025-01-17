@@ -64,9 +64,81 @@ body {
 section {
     background-color: black;
     color: red;
-    border: 2px, solid, red;
+    border: 2px, solid red;
     padding: 40px;
     text-align: center;
     margin: 10px;
 }
 
+.associate-picture {
+    height: 150px;
+    width: auto;
+}
+
+.all-associates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+.associate-select {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #222;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 175px;
+    height: 475px;
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.form-label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid beige;
+}
+
+.description {
+    text-align: left;
+    font-size: 13px;
+}
+
+button {
+    background-color: #222;
+    border: solid red;
+    color: red;
+}
+
+button:hover {
+    color: blue;
+    text-decoration: underline;
+}

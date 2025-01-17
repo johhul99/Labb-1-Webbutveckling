@@ -89,4 +89,5 @@ section {
     height: 300px;
     width: auto;
     margin-right: 50px;
+    border: solid red;
 }
