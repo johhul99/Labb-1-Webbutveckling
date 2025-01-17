@@ -1,10 +1,14 @@
 .navbar-toggler-icon {
-    background-color: #8fc7ff;
+    background-color: red;
     border-radius: 5px;
 }
 
 .navbar-toggler {
     border: 2px solid #000000;
+}
+
+.navbar-toggler:hover {
+    color: blue;
 }
 
 .navbar-nav .nav-item {
@@ -13,23 +17,59 @@
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
-    color: #333;
+    color: red;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: blue;
     text-decoration: underline;
 }
 
 .navbar-brand {
     margin: 0 10px;
+    color: red;
+}
+
+.navbar {
+    background-color: black;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+.navbar-brand:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 footer {
-    position: fixed;
+    vertical-align: bottom;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     font-size: 10px;
+    background-color: black;
+    color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+body {
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    background-color: black;
+    color: red;
+    border: 2px, solid, red;
+    padding: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+#landing-pic {
+    width: 50%;
+    height: auto;
 }
