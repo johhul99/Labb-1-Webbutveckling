@@ -28,6 +28,7 @@
 .navbar-brand {
     margin: 0 10px;
     color: red;
+    font-family: fantasy, 'Courier new', Courier;
 }
 
 .navbar {
@@ -57,7 +58,7 @@ footer {
 
 body {
     background-color: beige;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 section {
@@ -69,7 +70,23 @@ section {
     margin: 10px;
 }
 
-#landing-pic {
-    width: 50%;
-    height: auto;
+.contact {
+    flex: 1;
+}
+
+.about-us {
+    text-align: left;
+}
+
+.text-pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.associate-picture {
+    height: 300px;
+    width: auto;
+    margin-right: 50px;
 }

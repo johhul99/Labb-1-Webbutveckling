@@ -24,6 +24,7 @@
 .navbar-brand {
     margin: 0 10px;
     color: red;
+    font-family: fantasy, 'Courier new', Courier;
 }
 
 .navbar{
@@ -53,7 +54,7 @@ footer{
 
 body{
     background-color: beige;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 section {
