@@ -117,45 +117,75 @@
                 </div>
             </section>
             <br><br>
-            <h3>Please enter correct information about the target:</h3>
+            <h3>Please enter information about the target:</h3>
             <section>
                 <div class="form-row">
-                    <label for="first-name" class="form-label">First Name:</label>
-                    <input type="text" id="first-name" class="form-input" placeholder="John">
+                    <label for="target-first-name" class="form-label">First Name:</label>
+                    <input type="text" id="target-first-name" class="form-input" placeholder="John">
                 </div>
                 <div class="form-row">
-                    <label for="last-name" class="form-label">Last Name:</label>
-                    <input type="text" id="last-name" class="form-input" placeholder="Doe">
+                    <label for="target-last-name" class="form-label">Last Name:</label>
+                    <input type="text" id="target-last-name" class="form-input" placeholder="Doe">
                 </div>
                 <div class="form-row">
-                    <label for="adress" class="form-label">Adress:</label>
-                    <input type="text" id="adress" class="form-input" placeholder="Street123">
+                    <label for="target-adress" class="form-label">Adress:</label>
+                    <input type="text" id="target-adress" class="form-input" placeholder="Adress 123">
                 </div>
                 <div class="form-row">
-                    <label for="zip-code" class="form-label">Zip Code:</label>
-                    <input type="text" id="zip-code" class="form-input" placeholder="12345">
+                    <label for="target-zip-code" class="form-label">Zip Code:</label>
+                    <input type="text" id="target-zip-code" class="form-input" placeholder="12345">
                 </div>
                 <div class="form-row">
-                    <label for="city" class="form-label">City:</label>
-                    <input type="text" id="city" class="form-input" placeholder="City">
+                    <label for="target-city" class="form-label">City:</label>
+                    <input type="text" id="target-city" class="form-input" placeholder="City">
                 </div>
             </section>
             <br>
-            <button>Add hit to cart</button>
+            <p>We charge 0.048₿ per hit</p>
+            <button id="add-to-cart">Add hit to cart</button>
         </section>
 
         <section>
             <h3>Cart</h3>
             <section>
-                
+                <ul id="cart">
+                    <li style="display:none"></li>
+                </ul>
             </section>
+            <br>
+            <h4>Total price:</h4><div id="total-price"></div>
+            <br><br>
+            <h3>Please enter your information:</h3>
+            <section>
+                <div class="form-row">
+                    <label for="client-first-name" class="form-label">First Name:</label>
+                    <input type="text" id="client-first-name" class="form-input" placeholder="John">
+                </div>
+                <div class="form-row">
+                    <label for="client-last-name" class="form-label">Last Name:</label>
+                    <input type="text" id="client-last-name" class="form-input" placeholder="Doe">
+                </div>
+                <div class="form-row">
+                    <label for="client-phone-number" class="form-label">Phone Number:</label>
+                    <input type="text" id="client-phone-number" class="form-input" placeholder="0712345678">
+                </div>
+                <div class="form-row">
+                    <label for="client-email" class="form-label">E-Mail:</label>
+                    <input type="text" id="client-email" class="form-input" placeholder="example@domain.com">
+                </div>
+            </section>
+            <br>
+            <button id="checkout-cart">Checkout cart</button>
         </section>
     </main>
 
     <footer>
         <p>Copyright © 2014 HireAHitman AB</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
