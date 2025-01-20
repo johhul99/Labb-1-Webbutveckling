@@ -265,7 +265,7 @@ checkoutCart.addEventListener('click', () => {
 });
 
 function isOnlyLetters(input) {
-    const regex = /^[a-zA-ZåäöÅÄÖ\s]+$/; 
+    const regex = /^[a-zA-ZåäöÅÄÖ\s\u00C0-\u017F']+$/; 
     return regex.test(input); 
 }
 
