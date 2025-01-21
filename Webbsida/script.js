@@ -59,7 +59,7 @@ addToCart.addEventListener('click', () => {
     }
     else {
         let selectedHitmen = "";
-        if (hitmen.length = 1) {
+        if (hitmen.length === 1) {
             selectedHitmen = hitmen[0];
         }
         else {
@@ -98,10 +98,10 @@ addToCart.addEventListener('click', () => {
                             orderArray.push(hitOrder);
                             const hit = document.createElement('li');
 
-                            hit.innerHTML = " 1 x <br>Associate hitman: " + selectedHitmen +
-                                "<br>Target profile:<br>Name: " + target.firstName + " " + target.lastName +
-                                "<br>Adress: " + target.adress + " " + target.zipCode + " " + target.city +
-                                "<br>Price: 0.048₿";
+                            hit.innerHTML = " <b>1 x</b> <br><b>Associate hitman:</b> " + selectedHitmen +
+                                "<br><b>Target profile:</b><br><b>Name:</b> " + target.firstName + " " + target.lastName +
+                                "<br><b>Adress:</b> " + target.adress + " " + target.zipCode + " " + target.city +
+                                "<br><b>Price:</b> 0.048₿";
                             
                             const removeBtn = document.createElement('button');
                             removeBtn.textContent = "Remove from cart";

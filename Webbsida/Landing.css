@@ -40,7 +40,7 @@
 }
 
 footer{
-    vertical-align: bottom;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -61,12 +61,13 @@ section {
     background-color: black;
     color: red;
     border: 2px, solid, red;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     margin: 10px;
 }
 
-#landing-pic {
-    width: 50%;
-    height: auto;
+@media(min-width: 768px){
+    section {
+        padding: 40px;
+    }
 }
