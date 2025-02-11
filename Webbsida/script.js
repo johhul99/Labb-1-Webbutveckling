@@ -183,7 +183,7 @@ addToCart.addEventListener('click', () => {
 
 });
 
-checkoutCart.addEventListener('click', () => {
+checkoutCart.addEventListener('click', async () => {
     if (!orderArray.length) {
         Swal.fire({
             title: 'Empty cart',
@@ -212,6 +212,27 @@ checkoutCart.addEventListener('click', () => {
                                 hit.remove();
                             }
                         }  
+
+                        try {
+                            const orderData = {
+                                hitList: orderArray,
+                                clientFirstName: orderClient.firstName,
+                                clientLastName: orderClient.lastName,
+                                clientPhoneNumber: orderClient.phoneNumber,
+                                clientEmail: orderClient.email
+                            };
+                            const response = await fetch('http://localhost:3000/api/order', {
+                                method: 'POST',
+                                headers: {'Content-Type': 'application/json'},
+                                body: JSON.stringify(orderData)
+                            });
+                            
+                            const result = await response.json();
+                            console.log(result);
+                        } catch (error) {
+                            alert(error.message);
+                        }
+
                         clearCheckout();
                         updatePrice();
                         
