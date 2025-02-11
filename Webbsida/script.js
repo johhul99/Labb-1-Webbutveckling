@@ -1,4 +1,4 @@
-const jasonCheckbox = document.getElementById('jason-checkbox');
+const jasonCheckbox = document.getElementById('jason-checkbox');//a
 const predatorCheckbox = document.getElementById('predator-checkbox');
 const gretaCheckbox = document.getElementById('greta-checkbox');
 const ghostfaceCheckbox = document.getElementById('ghostface-checkbox');
